@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tride_mobility/constants/colours.dart';
 import 'package:introduction_screen/introduction_screen.dart';
-import 'package:tride_mobility/screens/login_screen.dart';
+import 'package:tride_mobility/screens/home_screen.dart';
 
 class IntroductoryScreen extends StatefulWidget {
   @override
@@ -13,9 +14,7 @@ class _IntroductoryScreenState extends State<IntroductoryScreen> {
   final introKey = GlobalKey<IntroductionScreenState>();
 
   void _onIntroEnd(context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_) => LoginScreen()),
-    );
+    Get.offAll(() => HomeScreen());
   }
 
   @override

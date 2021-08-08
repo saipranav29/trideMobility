@@ -8,3 +8,4 @@ Color introductoryBackground2 = Color(0xFF000000);
 Color textColor1 = Color(0xFFFFFFFF);
 Color textColor2 = Color(0xFF000000);
 Color textColor3 = Color(0xFF666666);
+Color screenBackground2 = Color(0xFFC8C7CC);

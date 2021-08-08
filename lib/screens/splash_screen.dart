@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tride_mobility/constants/colours.dart';
 import 'package:tride_mobility/screens/introductory_screen.dart';
 
@@ -15,8 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
         Duration(seconds: 5),
-        () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-            builder: (BuildContext context) => IntroductoryScreen())));
+        () => Get.toNamed("/introScreen"));
   }
 
   @override
